@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.camillo.preferences.MainActivity">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="imie"
+        />
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nazwisko"
+        />
+   <RadioGroup
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/sex">
+
+
+       <RadioButton
+           android:id="@+id/sexWomen"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Kobieta"
+           />
+       <RadioButton
+           android:id="@+id/sexMen"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="meszczyzna"
+           />
+
+   </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/marketing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="zgoda na przetwarzanie danych"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="zapisz"
+        />
+
+    <Button
+
+        android:id="@+id/write_internal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="zapisz do pamięci wew"
+        />
+
+    <Button
+        android:id="@+id/read_internal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="odczytaj z pamięci wew"
+        />
+    <Button
+        android:id="@+id/write_external"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="zapisz z pam zew"
+        />
+    <Button
+        android:id="@+id/read_exsternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odczytaj z pam zew"
+        />
+
+
+</LinearLayout>
+
+</ScrollView>
+
